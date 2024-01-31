@@ -27,3 +27,18 @@ git remote set-url origin <new-remote-url>
 
 git remote remove origin
 git remote add origin <new-remote-url>
+Branches
+========
+git branch --> to show local branches
+git branch -r --> to show remote branches
+git branch -a --> all local and remote branches
+git branch feature-a --> create local branch
+git checkout feature-a --> this will switch a particular branch
+git checkout - "this will checkout to the previous branch"
+git checkout -b feature-b --> create branch and checout to that branch
+git branch -d feature-a  --> to delete a branch
+
+Rebase:
+=======
+You have a branch which should checkout from main branch and main branch may have multiple commits. Now in a scenario  the main branch has moved on and you don't have the commits from the main or master branch. So what rebase does, it's going to bring all the changes from whatever branch that you want i am going to bring the changes and the changes will be underneath your new branch. it brings all the commits from master into your branch and i am going to try and apply Your changes on top of it. That's what rebase does.
+after applying rebase you need to force push
